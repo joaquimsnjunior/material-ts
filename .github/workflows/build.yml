@@ -18,7 +18,7 @@ jobs:
           npm ci
           npm run build
       - name: Deploy to material-ts
-        uses: peaceiris/actions-material-ts@v3
+        uses: peaceiris/actions-material-dashboard@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
